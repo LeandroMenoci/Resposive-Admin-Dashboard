@@ -241,3 +241,128 @@ body {
   font-size: 2.5em;
   color: var(--blue);
 }
+.cardBox .card .cardName {
+  color: var(--black2);
+  font-size: 1.1em;
+  margin-top: 5px;
+}
+
+.cardBox .card .iconBx {
+  color: var(--black2);
+  font-size: 2.5em;
+}
+
+.cardBox .card:hover {
+  background: var(--blue);
+}
+
+.cardBox .card:hover .numbers,
+.cardBox .card:hover .cardName,
+.cardBox .card:hover .iconBx {
+  color: var(--white);
+}
+
+
+/* order details list */
+.details {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 30px;
+  /* margin-top: 10px; */
+  padding: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.recentOrders {
+  background: var(--white);
+  border-radius: 20px;
+  box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+  display: grid;
+  min-height: 500px;
+  padding: 20px;
+  position: relative;
+}
+
+.cardHeader {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardHeader h2 {
+ color: var(--blue);
+ font-weight: 600; 
+}
+
+.btn {
+  background: var(--blue);
+  border-radius: 6px;
+  color: var(--white);
+  padding: 5px 10px;
+  position: relative;
+  text-decoration: none;
+}
+
+.details table {
+  border-collapse: collapse;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.details table thead td {
+  font-weight: 600;
+}
+
+.details .recentOrders table tr {
+  color: var(--black1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.details .recentOrders table tr:last-child {
+  border-bottom: none;
+}
+
+.details .recentOrders table tbody tr:hover {
+  color: var(--white);
+  background: var(--blue);
+}
+
+.details .recentOrders table tr td {
+  padding: 10px;
+}
+
+.details .recentOrders table tr td:last-child {
+  text-align: end;
+}
+.details .recentOrders table tr td:nth-child(2) {
+  text-align: end;
+}
+
+.details .recentOrders table tr td:nth-child(3) {
+  text-align: center;
+}
+
+.status {
+  padding: 2px 4px;
+  color: var(--white);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.status.delivered {
+  background: #8de02c;
+}
+
+.status.pending {
+background: #f9ca3f;
+}
+
+.status.return {
+  background: #f00;
+}
+
+.status.inProgress {
+  background: #1795ce;
+}
